@@ -58,22 +58,86 @@
         </nav>
     </header>
 
+    <!-- form section -->
+    <div class="container mt-5">
+        <div class="mb-4">
+            <label for="selectHike">Select a Hike: </label>
+            <select name="selectHike" id="selectHike" class="form-select">
+                <option value="" selected>Select One</option>
+            </select>
+        </div>
 
+        <!-- hike info -->
+        <div id="hikeDetails" style="display: none;">
+            <h2 id="hikeName"></h2>
+            <p id="hikeDescription" class="lead"></p>
+            <p>Length:<span id="hikeLength"></span></p>
+            <p>Difficulty : <span id="hikeDifficulty"></span></p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" id="trailImages" alt="Trail map images">
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <main>
-        <h1>Our Famous Local Trails</h1>
-        <ul>
-            <Li>first Trail</Li>
-            <Li>first Trail</Li>
-            <Li>first Trail</Li>
-            <Li>first Trail</Li>
-            <Li>first Trail</Li>
-            <Li>first Trail</Li>
-            <Li>first Trail</Li>
-            <Li>first Trail</Li>
-        </ul>
+
+        <div class="container mt-5">
+            <h1>Hiking For You</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita commodi incidunt iusto
+                dolorem placeat perspiciatis illo minima, eos animi nam!</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./Tourist+Bureau+Workshop+-+Data+Files/HikingPage/birding_loop_2.png"
+                            alt="image of bird" class="img-fluid">
+                        <div class="card-body">
+                            <h6 class="card-title">Birdie Edition</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut
+                                dolore harum enim. Ipsam eos vitae, error numquam quibusdam excepturi?</p>
+                            <a href="#">Book Today</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- second one -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./Tourist+Bureau+Workshop+-+Data+Files/HikingPage/birding_loop_2.png"
+                            alt="image of bird" class="img-fluid">
+                        <div class="card-body">
+                            <h6 class="card-title">Birdie Edition</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut
+                                dolore harum enim. Ipsam eos vitae, error numquam quibusdam excepturi?</p>
+                            <a href="#">Book Today</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- sixt -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./Tourist+Bureau+Workshop+-+Data+Files/HikingPage/birding_loop_2.png"
+                            alt="image of bird" class="img-fluid">
+                        <div class="card-body">
+                            <h6 class="card-title">Birdie Edition</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut
+                                dolore harum enim. Ipsam eos vitae, error numquam quibusdam excepturi?</p>
+                            <a href="#">Book Today</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
 
+
+
+
+        </div>
 
 
 
@@ -81,7 +145,14 @@
 
 
 
-    <footer></footer>
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container mb-lg-0">
+            &copy; 2024 Creek Coco
+        </div>
+    </footer>
+
 
 
 

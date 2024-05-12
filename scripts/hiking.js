@@ -32,3 +32,54 @@ let hikes = [
     },
 ];
 
+// adding dropdown options
+
+window.onload = function () {
+    let hikeSelect = document.getElementById("selectHike");
+    let lengthOfHikes = hikes.length;
+    for (let i = 0; i < lengthOfHikes; i++) {
+        let option = document.createElement("option");
+        option.value = hikes[i].id;
+        option.innerHTML = hikes[i].name;
+        hikeSelect.appendChild(option)
+    }
+
+    // event listener
+    hikeSelect.addEventListener("change", function () {
+        let selectedHikeId = hikeSelect.value;
+        let selectedHike;
+        let lengthOfHikes = hikes.length;
+        for (let i = 0; i < lengthOfHikes; i++) {
+            if (hikes[i].id === selectedHikeId) {
+                selectedHike = hikes[i];
+            }
+        }
+
+        // now if its true
+        if (selectedHike) {
+            displayHikeDetails(selectedHike)
+        } else {
+            hideHikeDetails()
+        }
+    });
+}
+
+function displayHikeDetails(hike) {
+    document.getElementById("hikeName").innerHTML = hike.name;
+    document.getElementById("hikeDescription").innerHTML = hike.description;
+    document.getElementById("hikeLength").innerHTML = hike.length;
+    document.getElementById("hikeDifficulty").innerHTML = hike.difficulty;
+    document.getElementById("trailImages").src = `./Tourist+Bureau+Workshop+-+Data+Files/HikingPage/${hike.scenicImage}`;
+    document.getElementById("hikeDetails").style.display = "block";
+
+
+}
+
+function hideHikeDetails() {
+    document.getElementById("hikeDetails").style.display = "none";
+}
+
+
+// TODO
+// refactor
+// beautify

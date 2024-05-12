@@ -1,0 +1,15 @@
+.image {
+    background-image: url("Tourist+Bureau+Workshop+-+Data+Files/HikingPage/deep_blue_1.png");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 60px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 999;
+}
+
