@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- css -->
-    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/activities.css">
 
 </head>
 
@@ -58,20 +58,23 @@
         </nav>
     </header>
 
-
-
     <main>
-        <section>
-            <label for="category">Select one: </label>
-            <select name="ActivitiesCategory" id="category">
-                <option value="" selected>Select one </option>
-            </select>
-        </section>
-
-        <!-- second section -->
-        <section id="detailsOfActivities">
-            <!-- here -->
-        </section>
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Activity Booking</h1>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="main-container">
+                        <label for="category">Select Category: </label>
+                        <select class="form-control" id="category">
+                            <option value="" selected class="text-center">Select one</option>
+                        </select>
+                    </div>
+                    <!-- for displaying activities -->
+                    <section id="detailsOfActivities">
+                    </section>
+                </div>
+            </div>
+        </div>
 
 
 
